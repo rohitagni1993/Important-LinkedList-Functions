@@ -1,0 +1,10 @@
+int CompareLists(Node headA, Node headB) {
+    while ((headA != null) && (headB != null) && (headA.data == headB.data))  {
+            headA = headA.next;
+            headB = headB.next;    
+    }
+    if (headA!=null || headB!=null)
+        return 0;
+    else
+        return 1;
+}
